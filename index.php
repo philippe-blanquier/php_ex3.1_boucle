@@ -7,16 +7,9 @@
     </head>
     <body >
         <ul>
-            <?php
-                for ($idx=0; $idx <10; $idx++)
-                {
-            ?>
-            <li>
-                <?php
-                    echo nl2br($idx."\n");
-                }
-                ?>
-            </li>
-       </ul>
+            <?php for ($idx=0; $idx <10; $idx++){ ?>
+            <li><?= $idx; ?></li>
+            <?php } ?>
+        </ul>
     </body>
 </html>
