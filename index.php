@@ -6,13 +6,17 @@
         <title>PHP ex 3.1 boucle</title>
     </head>
     <body >
-        <p>
+        <ul>
             <?php
-            for ($idx=0; $idx <10; $idx++)
-            {
-                echo ($idx.' ');
-            }
+                for ($idx=0; $idx <10; $idx++)
+                {
             ?>
-       </p>
+            <li>
+                <?php
+                    echo nl2br($idx."\n");
+                }
+                ?>
+            </li>
+       </ul>
     </body>
 </html>
